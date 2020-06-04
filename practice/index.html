@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>カウンター</h1>
+
+	<div id="disp-count"></div>
+	<button id="down">カウントダウン</button>
+	<button id="up">カウントアップ</button>
+
+	<script>
+		var disp_count = document.getElementById('disp-count');
+		var up = document.getElementById('up');
+		var down = document.getElementById('down');
+		var count = 0;
+
+		up.addEventListener('click', function () {
+			count += 1;
+			disp_count.innerHTML = count;
+		} )
+		down.addEventListener('click', function () {
+			count -= 1;
+			disp_count.innerHTML = count;
+		} )
+	</script>
+
+</body>
+</html>
